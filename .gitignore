@@ -1,0 +1,40 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Android / Gradle
+.gradle/
+build/
+**/build/
+Builds/
+**/Builds/
+local.properties
+*.iml
+
+# Simplicity Studio generated/intermediate
+**/GNU ARM v12.2.1 - Default/
+**/.pdm/
+**/.settings/
+**/.uceditor/
+
+# Large/local toolchains and legacy folders not for git
+tools/
+bt_soc_thermometer_29_03_2026/
+docs/
+
+# Archives / binaries not needed in source control
+*.zip
+*.bin
+*.hex
+*.out
+*.axf
+*.map

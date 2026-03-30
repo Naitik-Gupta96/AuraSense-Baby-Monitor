@@ -1,0 +1,5 @@
+2026-03-29 23:47:56,109 - root - DEBUG - Input directory: C:\Users\Siddharth Nautiyal\OneDrive\Documents\v2 zip\v2\config\tflite
+2026-03-29 23:47:56,110 - root - DEBUG - Output directory: C:\Users\SIDDHA~1\AppData\Local\Temp\apack_aiml.mvp-compiler14724958830446764090\output
+2026-03-29 23:47:56,110 - root - DEBUG - Part Number: efr32mg26b510f3200im68
+2026-03-29 23:47:56,112 - root - DEBUG - Found tflite file: C:\Users\Siddharth Nautiyal\OneDrive\Documents\v2 zip\v2\config\tflite\baby_cry_int8_DEPLOY.tflite
+2026-03-29 23:47:56,113 - root - DEBUG - Board platform selected: efr32

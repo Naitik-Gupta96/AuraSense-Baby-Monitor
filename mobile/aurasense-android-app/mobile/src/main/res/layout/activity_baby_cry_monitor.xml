@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fakeStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/blue_primary" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue_primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/connection_bar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bar_with_additional_info"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/demo_connected_to"
+        android:textColor="@color/blue_primary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_current_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baby_cry_waiting_for_data"
+                android:textColor="@color/blue_primary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cry_subclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_subclass_default"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <TextView
+                android:id="@+id/tv_confidence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_confidence_default"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <ProgressBar
+                android:id="@+id/progress_confidence"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="8dp"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tv_raw_packet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_raw_packet_default"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <TextView
+                android:id="@+id/tv_led_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_led_default"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <TextView
+                android:id="@+id/tv_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_temperature_na"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <TextView
+                android:id="@+id/tv_esclation_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_profile_legacy"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baby_cry_monitoring_enabled" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_monitoring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baby_cry_alerts_enabled" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_alerts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baby_cry_device_enabled" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_device_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/baby_cry_deep_sleep_enabled" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_deep_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_threshold_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/baby_cry_threshold_default" />
+
+            <SeekBar
+                android:id="@+id/seek_threshold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="49"
+                android:progress="35" />
+
+            <TextView
+                android:id="@+id/tv_debounce_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/baby_cry_debounce_default" />
+
+            <SeekBar
+                android:id="@+id/seek_debounce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="9"
+                android:progress="4" />
+
+            <TextView
+                android:id="@+id/tv_ignored_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/baby_cry_ignored_alerts_default"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <Button
+                android:id="@+id/btn_pick_ringtone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/baby_cry_pick_ringtone" />
+
+            <TextView
+                android:id="@+id/tv_escalation_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/baby_cry_escalation_inactive"
+                android:textColor="@color/silabs_dark_gray_text" />
+
+            <Button
+                android:id="@+id/btn_acknowledge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/baby_cry_acknowledge" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="baby_cry_demo_title">Baby Cry Monitor</string>
+    <string name="baby_cry_demo_description">Single demo for BLE baby monitoring with cry state, thermal sensor, and alerts.</string>
+    <string name="soc_baby_cry_must_be_connected">A circuit board (SoC) must be connected and running "AI cry classifier" firmware.</string>
+    <string name="baby_cry_waiting_for_data">Waiting for AI data\u2026</string>
+    <string name="baby_cry_primary_cry">Cry</string>
+    <string name="baby_cry_primary_not_cry">Not Cry / Background</string>
+    <string name="baby_cry_subclass_default">Cry subtype: --</string>
+    <string name="baby_cry_subclass_value">Cry subtype: %1$s</string>
+    <string name="baby_cry_confidence_default">Confidence: --%</string>
+    <string name="baby_cry_raw_packet_default">Raw packet: class=-- score=--</string>
+    <string name="baby_cry_led_default">LED state: --</string>
+    <string name="baby_cry_led_blue">LED state: Blue (Sad)</string>
+    <string name="baby_cry_led_yellow">LED state: Yellow (Laugh)</string>
+    <string name="baby_cry_led_red">LED state: Red (Background)</string>
+    <string name="baby_cry_temperature_na">Temperature: N/A</string>
+    <string name="baby_cry_monitoring_enabled">Monitoring enabled</string>
+    <string name="baby_cry_alerts_enabled">Alerts enabled</string>
+    <string name="baby_cry_device_enabled">Device enabled (SoC power mode)</string>
+    <string name="baby_cry_deep_sleep_enabled">Deep sleep mode</string>
+    <string name="baby_cry_threshold_default">Confidence threshold: 85%</string>
+    <string name="baby_cry_debounce_default">Debounce count: 5 (recommended)</string>
+    <string name="baby_cry_threshold_value">Confidence threshold: %1$d%%</string>
+    <string name="baby_cry_debounce_value">Debounce count: %1$d (recommended)</string>
+    <string name="baby_cry_ignored_alerts_default">Ignored alerts: 0</string>
+    <string name="baby_cry_escalation_inactive">Escalation: inactive</string>
+    <string name="baby_cry_escalation_active">Escalation: active (5 ignored alerts reached)</string>
+    <string name="baby_cry_acknowledge">Acknowledge Alerts</string>
+    <string name="baby_cry_pick_ringtone">Pick Custom Ringtone</string>
+    <string name="baby_cry_connected_to">Connected to %1$s</string>
+    <string name="baby_cry_temperature_value">Temperature: %1$.1f\u00b0C</string>
+    <string name="baby_cry_raw_packet_value">Raw packet: class=%1$d score=%2$d</string>
+    <string name="baby_cry_confidence_value">Confidence: %1$.1f%%</string>
+    <string name="baby_cry_ignored_alerts_value">Ignored alerts: %1$d</string>
+    <string name="baby_cry_class_background">Ambient / Silence</string>
+    <string name="baby_cry_class_cry">Cry</string>
+    <string name="baby_cry_class_laugh">Laugh</string>
+    <string name="baby_cry_class_sad">Sad</string>
+    <string name="baby_cry_class_unknown">Unknown</string>
+    <string name="baby_cry_profile_legacy">Profile: Legacy</string>
+    <string name="baby_cry_profile_aurasense">Profile: AuraSense</string>
+    <string name="baby_cry_trigger_popup_title">Baby Alert</string>
+    <string name="baby_cry_trigger_popup_message">Sad cry detected above threshold. Please check the child.</string>
+    <string name="baby_cry_escalation_popup_title">Escalation Active</string>
+    <string name="baby_cry_escalation_popup_message">5 alerts were ignored. Escalation alarm/ringtone is now active.</string>
+    <string name="baby_cry_ringtone_selected">Custom ringtone selected</string>
+    <string name="baby_cry_ringtone_default">Default alarm ringtone in use</string>
+    <string name="baby_cry_control_not_supported">SoC control characteristic not available on this firmware.</string>
+</resources>
