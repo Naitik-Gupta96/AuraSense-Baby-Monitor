@@ -26,15 +26,14 @@ model/
 
 ## 1. Flash Firmware (Fastest Path)
 
-Use a prebuilt `.s37` image:
+Use the prebuilt `.s37` image:
 
-- `firmware/releases/aura_baby_monitor_latest.s37`
-- fallback: `firmware/releases/aura_baby_monitor_earlier.s37`
+- `firmware/releases/aura_baby_monitor.s37`
 
 ### Flash command (Simplicity Commander)
 
 ```bash
-commander flash firmware/releases/aura_baby_monitor_latest.s37 --device EFR32MG26 --serialno <YOUR_JLINK_SN>
+commander flash firmware/releases/aura_baby_monitor.s37 --device EFR32MG26 --serialno <YOUR_JLINK_SN>
 commander device reset --serialno <YOUR_JLINK_SN>
 ```
 
@@ -121,4 +120,3 @@ Typical flow:
 - Android app source
 - Model training code + model artifact + dataset
 - Prebuilt `.s37` release image(s)
-
